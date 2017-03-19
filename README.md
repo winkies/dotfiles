@@ -1,0 +1,3 @@
+# Dotfiles
+
+Readme and setup i3 | tmux | emacs | zsh coming soon...
