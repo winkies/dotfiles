@@ -15,15 +15,21 @@
      auto-complete-c-headers
      auto-package-update
      dash
+     company-tern
      go-autocomplete
      go-mode
      iedit
+     js3-mode
      linum-relative
      load-dir
      neotree
      popup
      yasnippet
      zenburn-theme
+     ruby-mode
+     robe
+     xref-js2
+     yaml-mode
      ))
 
 ;; Fetch the list of packages available
@@ -45,3 +51,14 @@
 (require 'packages)
 (require 'settings)
 (require 'messages)
+
+;;
+;; Yaml Mode
+;;
+(add-hook 'yaml-mode-hook
+        (lambda ()
+            (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
+
+
+(autoload 'js3-mode "js3" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js3-mode))
