@@ -9,14 +9,8 @@ Just my configuration files for Emacs.
 * Add Python tools (auto-completion, indentation, ...)
 * Add GNU coding style
 
-### Installation
-On your home (~/)
-~~~{.sh}
-git clone https://github.com/Winkies/.emacs.d.git
-~~~
-
 ### Emacs version
-* 25.5.1
+* 25.X
 
 ### Dependencies
 * auto-complete
@@ -30,10 +24,3 @@ git clone https://github.com/Winkies/.emacs.d.git
 * yasnippet
 * zenburn-theme
 
-### Installation dependencies
-Normally, they will be installed automatically by a snippet
-present in init.el.
-
-License
-----
-Copyright (c) Vincent Firmin Licensed under the WTFPL license.
