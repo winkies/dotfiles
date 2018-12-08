@@ -17,10 +17,19 @@ Just my configuration files for Emacs.
 * auto-complete-c-headers
 * auto-package-update
 * dash
+* company-tern
+* go-autocomplete
+* go-mode
 * iedit
+* js3-mode
 * linum-relative
+* load-dir
 * neotree
 * popup
 * yasnippet
 * zenburn-theme
+* ruby-mode
+* robe
+* xref-js2
+* yaml-mode
 
