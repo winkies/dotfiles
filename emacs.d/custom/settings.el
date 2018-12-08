@@ -91,4 +91,3 @@
 			  (other-window -1)))
 
 (provide 'settings)
-;; EOF
