@@ -44,13 +44,9 @@ bindsym $mod+n exec nautilus --no-desktop
 # bindsym $mod+Shift+q kill
 bindsym $ALT+q kill
 
-# exec xrdb -l /home/winkies/.Xdefaults
-# exec xmodmap /home/winkies/.Xmodmap
 exec xsetroot -mod 1 1 -fg mediumslateblue -bg lightslategray
 # exec xset +fp /usr/local/share/fonts/programing/
 exec xset fp rehash
-# exec urxvtd -q -f -o
-# exec hsetroot -center $HOME/Pictures/background.jpg
 
 # load background
 exec feh --bg-fill $HOME/Pictures/background.jpg
