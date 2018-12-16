@@ -50,7 +50,11 @@ exec xsetroot -mod 1 1 -fg mediumslateblue -bg lightslategray
 # exec xset +fp /usr/local/share/fonts/programing/
 exec xset fp rehash
 # exec urxvtd -q -f -o
-exec hsetroot -center $HOME/Pictures/background.jpg
+# exec hsetroot -center $HOME/Pictures/background.jpg
+
+# load background
+exec feh --bg-fill $HOME/Pictures/background.jpg
+
 exec update-notifier
 exec nm-applet
 exec xfce4-power-manager
@@ -62,7 +66,8 @@ bindsym $mod+d exec dmenu_run -fn "xft:droid sans:bold:pixelsize=11:antialias=tr
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $ALT+Tab focus right
-bindsym $ALT+Shift+Tab focus left
+bindsym $mod+Right focus right
+bindsym $mod+Left focus left
 
 # move focused window
 bindsym $mod+Shift+J move left
@@ -170,6 +175,9 @@ mode "resize" {
 
 
 bindsym $mod+r mode "resize"
+
+# Multi-monitor
+force_xinerama yes
 
 # start the bars :-)
 # exec polybar top &
