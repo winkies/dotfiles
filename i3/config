@@ -44,6 +44,8 @@ bindsym $mod+n exec nautilus --no-desktop
 # bindsym $mod+Shift+q kill
 bindsym $ALT+q kill
 
+exec xrdb -l /home/winkies/.Xdefaults
+# exec xmodmap /home/winkies/.Xmodmap
 exec xsetroot -mod 1 1 -fg mediumslateblue -bg lightslategray
 # exec xset +fp /usr/local/share/fonts/programing/
 exec xset fp rehash
@@ -112,6 +114,14 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
+# Multi-monitor
+# bindsym $mod+x move workspace to output HDMI-1
+force_xinerama yes
+bindsym $mod+k exec xrandr --output HDMI-1 --off
+bindsym $mod+h exec xrandr --output HDMI-1 --auto
+bindsym $mod+j exec xrandr | grep 'HDMI-1 connected' && \
+        xrandr --output eDP-1 --auto --output HDMI-1 --auto --right-of eDP-1
+
 # move focused container to workspace
 bindsym $mod+Shift+exclam move container to workspace 1
 bindsym $mod+Shift+at move container to workspace 2
@@ -171,13 +181,6 @@ mode "resize" {
 
 
 bindsym $mod+r mode "resize"
-
-# Multi-monitor
-force_xinerama yes
-
-# start the bars :-)
-# exec polybar top &
-# exec polybar bottom &
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
