@@ -1,3 +1,9 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "urxvt/ext/urxvt-font-size"]
+	path = urxvt/ext/urxvt-font-size
+	url = https://github.com/majutsushi/urxvt-font-size
+[submodule "urxvt/ext/urxvt-perls"]
+	path = urxvt/ext/urxvt-perls
+	url = https://github.com/muennich/urxvt-perls
