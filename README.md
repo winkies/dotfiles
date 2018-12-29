@@ -2,16 +2,24 @@
 
 ## Setup configuration:
 * Emacs
-* i3
-* Zsh
-* Terminator
+* i3wm
+* [Zsh]
 * Tmux
-* Urxvt-unicode
+* Rxvt-unicode
 
 ## App configuration:
-* f.lux
-* LaTeX
+* [Redshift]
+
+## How to install ?
+
+```
+./install
+```
 
 License
 ----
 Copyright (c) Vincent Firmin Licensed under the WTFPL license.
+
+----
+[Redshift]: https://github.com/jonls/redshift
+[Zsh]: https://github.com/robbyrussell/oh-my-zsh
