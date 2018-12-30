@@ -19,7 +19,7 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js3-mode))
 
 ;; Load Zenburn theme
-(load-theme 'zenburn t)
+;; (load-theme 'zenburn t)
 
 ;; Source Tree Neo
 ;; (require 'neotree)

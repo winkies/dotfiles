@@ -90,4 +90,8 @@
 			  (interactive)
 			  (other-window -1)))
 
+;; Bind Ctrl+Arrow to move faster on line
+(global-set-key "\M-[1;5C"    'forward-word)  ; Ctrl+right   => forward word
+(global-set-key "\M-[1;5D"    'backward-word) ; Ctrl+left    => backward word
+
 (provide 'settings)
