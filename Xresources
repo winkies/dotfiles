@@ -94,3 +94,16 @@ URxvt.keysym.C-j:               perl:font-size:decrease
 !| make Ctrl-arrow work
 URxvt.keysym.C-Right:           \033[1;5C
 URxvt.keysym.C-Left:            \033[1;5D
+
+!| rofi
+rofi.modi:                      window,run
+rofi.font:                      "DejaVu Sans Mono" Book 11
+rofi.lines:                     5
+rofi.columns:                   1
+rofi.color-enabled:             true
+
+!|                                bg       fg      altbg    hlbg     hlfg
+rofi.color-normal:              #222222, #eeeedd, #002233, #aa2222, #002233
+rofi.color-urgent:              #222222, #eeeedd, #002233, #aa2222, #002233
+rofi.color-active:              #222222, #eeeedd, #002233, #aa2222, #002233
+rofi.color-window:              #222222, #eeeedd

@@ -3,6 +3,7 @@
 ### Dependencies
 * feh
 * xautolock
+* rofi
 
 ### Pictures
 
