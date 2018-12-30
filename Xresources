@@ -83,8 +83,8 @@ URxvt.iso_14755_52:             false
 !| extensions -> clipboard (requires xsel)
 !| https://github.com/muennich/urxvt-perls
 URxvt.keysym.C-v:               perl:clipboard:copy
-URxvt.keysym.C-b:               perl:clipboard:paste
-URxvt.keysym.C-M-b:             perl:clipboard:paste_escaped
+URxvt.keysym.C-n:               perl:clipboard:paste
+URxvt.keysym.C-M-n:             perl:clipboard:paste_escaped
 
 !| extensions -> font-size
 !| https://github.com/majutsushi/urxvt-font-size
@@ -92,5 +92,5 @@ URxvt.keysym.C-h:               perl:font-size:increase
 URxvt.keysym.C-j:               perl:font-size:decrease
 
 !| make Ctrl-arrow work
-URxvt.keysym.C-Right  : \033[1;5C
-URxvt.keysym.C-Left   : \033[1;5D
+URxvt.keysym.C-Right:           \033[1;5C
+URxvt.keysym.C-Left:            \033[1;5D
