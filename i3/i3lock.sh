@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Lock screen displaying this image
-i3lock -i  ~/Pictures/lock.png
+i3lock -t -i $HOME/Pictures/lock.png
