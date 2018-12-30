@@ -2,7 +2,7 @@
 
 ## Setup configuration:
 * Emacs
-* i3wm
+* [i3-gaps]
 * [Zsh]
 * Tmux
 * Rxvt-unicode
@@ -21,5 +21,6 @@ License
 Copyright (c) Vincent Firmin Licensed under the WTFPL license.
 
 ----
+[i3-gaps]: https://github.com/Airblader/i3
 [Redshift]: https://github.com/jonls/redshift
 [Zsh]: https://github.com/robbyrussell/oh-my-zsh
