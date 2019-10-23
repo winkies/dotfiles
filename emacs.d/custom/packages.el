@@ -3,7 +3,8 @@
 ;; Packages:    Yasnippet
 ;;              Yaml Mode
 ;;              JS3 Mode
-;;              Zenburn theme
+;;              ESS
+;;              Editorconfig
 
 ;; Load yasnippet
 (require 'yasnippet)
@@ -18,14 +19,15 @@
 (autoload 'js3-mode "js3" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js3-mode))
 
-;; Load Zenburn theme
-;; (load-theme 'zenburn t)
+;; ESS
+(add-to-list 'load-path "$HOME/.emacs.d/git/ESS/lisp")
+(load "ess-site")
 
-;; Source Tree Neo
-;; (require 'neotree)
-;; (require 'linum-relative)
-;; (setq neo-theme 'nerd)
-;; (setq neo-smart-open t)
-;; (neotree-show)
+;; Editor Config
+(require 'editorconfig)
+(editorconfig-mode 1)
+
+(global-set-key "\M-[1;5C"    'forward-word)  ; Ctrl+right   => forward word
+(global-set-key "\M-[1;5D"    'backward-word) ; Ctrl+left    => backward word
 
 (provide 'packages)

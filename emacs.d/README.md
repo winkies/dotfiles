@@ -12,19 +12,30 @@ Just my configuration files for Emacs.
 ### Emacs version
 * 25.X
 
+#### Emacs Speak Statistics
+
+```
+git clone https://github.com/emacs-ess/ESS.git $HOME/.emacs/git/ESS
+cd $HOME/.emacs/git/ESS
+make
+make install
+```
+
 ### Dependencies
 * auto-complete
 * auto-complete-c-headers
 * auto-package-update
-* dash
 * company-tern
+* dash
+* editorconfig
+* flycheck
 * go-autocomplete
 * go-mode
 * iedit
+* js2-mode
 * js3-mode
 * linum-relative
 * load-dir
-* neotree
 * popup
 * yasnippet
 * zenburn-theme
@@ -32,4 +43,3 @@ Just my configuration files for Emacs.
 * robe
 * xref-js2
 * yaml-mode
-
