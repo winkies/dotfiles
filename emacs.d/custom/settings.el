@@ -90,8 +90,10 @@
 			  (interactive)
 			  (other-window -1)))
 
-;; Bind Ctrl+Arrow to move faster on line
-(global-set-key "\M-[1;5C"    'forward-word)  ; Ctrl+right   => forward word
-(global-set-key "\M-[1;5D"    'backward-word) ; Ctrl+left    => backward word
+;; New feature ?!
+(setq visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
+(setq-default left-fringe-width nil)
+(setq-default indicate-empty-lines t)
+(setq-default indent-tabs-mode nil)
 
 (provide 'settings)

@@ -1,46 +1,52 @@
 ;; Emacs Configuration File
 ;; MELPA Package Emacs
 
-;; (require 'package)
+(require 'package)
 
-;; (add-to-list 'package-archives
-;;              '("melpa" . "https://melpa.org/packages/"))
-;; (when (< emacs-major-version 24)
-;;   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/"))
+(when (< emacs-major-version 24)
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 
-;; (package-initialize)
+(package-initialize)
 
-;; ;; Install packages if they're missing
-;; (setq package-list
-;;    '(auto-complete
-;;      auto-complete-c-headers
-;;      auto-package-update
-;;      dash
-;;      company-tern
-;;      go-autocomplete
-;;      go-mode
-;;      iedit
-;;      js3-mode
-;;      linum-relative
-;;      load-dir
-;;      neotree
-;;      popup
-;;      yasnippet
-;;      zenburn-theme
-;;      ruby-mode
-;;      robe
-;;      xref-js2
-;;      yaml-mode
-;;      ))
+;; Install packages if they're missing
+(setq package-list
+   '(auto-complete
+     auto-complete-c-headers
+     auto-package-update
+     company-tern
+     dash
+     editorconfig
+     flycheck
+     go-autocomplete
+     go-mode
+     iedit
+     js2-mode
+     js3-mode
+     linum-relative
+     load-dir
+     popup
+     yasnippet
+     zenburn-theme
+     ruby-mode
+     robe
+     xref-js2
+     yaml-mode
+     ))
 
-;; ;; Fetch the list of packages available
-;; (unless package-archive-contents
-;;   (package-refresh-contents))
+;; Fetch the list of packages available
+(unless package-archive-contents
+  (package-refresh-contents))
 
-;; ;; Install the missing packages
-;; (dolist (package package-list)
-;;   (unless (package-installed-p package)
-;;         (package-install package)))
+;; Install the missing packages
+(dolist (package package-list)
+  (unless (package-installed-p package)
+        (package-install package)))
+
+;; Install update package if they're pending
+(require 'auto-package-update)
+(auto-package-update-maybe)
 
 ;; ;; Install update package if they're pending
 ;; (require 'auto-package-update)
