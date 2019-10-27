@@ -1,7 +1,5 @@
 # Emacs configuration
 
-Just my configuration files for Emacs.
-
 ### Todo List
 * Automatic loading without `provide` instructions
 * Split buffer (like C-x-2 or C-x-3) with workgroups or something else
@@ -10,7 +8,7 @@ Just my configuration files for Emacs.
 * Add GNU coding style
 
 ### Emacs version
-* 25.X
+* 26.X
 
 #### Emacs Speak Statistics
 
