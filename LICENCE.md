@@ -1,7 +1,7 @@
      DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                         Version 2, December 2004
 
-Copyright (C) 2016 Vincent Firmin <vincent.firmin@epitech.eu>
+Copyright (C) 2016-2018 Vincent Firmin <vincent.frm@gmail.com>
 
 Everyone is permitted to copy and distribute verbatim or modified
 copies of this license document, and changing it is allowed as long

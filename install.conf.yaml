@@ -1,0 +1,22 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+        force: true
+
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    ~/.emacs.d: emacs.d
+    ~/.zshrc: zshrc
+    ~/.config/i3/config: i3/config
+    ~/.config/i3/i3lock: i3/i3lock.sh
+    ~/.config/redshift/redshift.conf: redshift.conf
+    ~/.Xdefaults: Xdefault
+    ~/.Xresources: Xresources
+    ~/.urxvt: urxvt
+    ~/.bash_aliases: bash_aliases
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

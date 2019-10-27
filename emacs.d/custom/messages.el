@@ -1,6 +1,6 @@
 ;; Snippet Remove
 ;;
-;; Remove buffer following:	scratch
+;; Remove buffer following:	Scratch
 ;;				Messages
 ;;				Completions
 

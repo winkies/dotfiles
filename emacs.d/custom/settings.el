@@ -90,5 +90,10 @@
 			  (interactive)
 			  (other-window -1)))
 
+;; New feature ?!
+(setq visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
+(setq-default left-fringe-width nil)
+(setq-default indicate-empty-lines t)
+(setq-default indent-tabs-mode nil)
+
 (provide 'settings)
-;; EOF
