@@ -13,8 +13,8 @@
 #### Emacs Speak Statistics
 
 ```
-git clone https://github.com/emacs-ess/ESS.git $HOME/.emacs/git/ESS
-cd $HOME/.emacs/git/ESS
+git clone https://github.com/emacs-ess/ESS.git $HOME/.emacs.d/git/ESS
+cd $HOME/.emacs.d/git/ESS
 make
 make install
 ```
