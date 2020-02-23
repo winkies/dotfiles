@@ -1,8 +1,8 @@
 # Winkie's Dotfiles
 
 ## Setup configuration:
-* [Emacs]
-* [i3-gaps]
+* [Emacs]: see [config](./emacs.d/README.md).
+* [i3-gaps]: see [config](./i3/README.md).
 * [Zsh]
 * [Rxvt-unicode]
 
@@ -14,10 +14,6 @@
 ```
 ./install
 ```
-
-License
-----
-Copyright (c) Vincent Firmin Licensed under the WTFPL license.
 
 ---
 [Emacs]: https://www.gnu.org/software/emacs/
