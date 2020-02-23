@@ -4,7 +4,7 @@ URxvt*transparent:              true
 URxvt*shading:                  20
 URxvt*scrollBar:                false
 URxvt*cursorBlink:              1
-URxvt.termName:                 rxvt-unicode
+URxvt*.termName:                rxvt-unicode-256color
 
 URxvt*font:                     xft:DejaVu Sans Mono:pixelsize=13
 URxvt*boldFont:                 xft:DejaVu Sans Mono:pixelsize=13:weight=bold
