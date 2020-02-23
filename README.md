@@ -15,10 +15,6 @@
 ./install
 ```
 
-License
-----
-Copyright (c) Vincent Firmin Licensed under the WTFPL license.
-
 ---
 [Emacs]: https://www.gnu.org/software/emacs/
 [i3-gaps]: https://github.com/Airblader/i3
