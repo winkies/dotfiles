@@ -23,7 +23,6 @@ make install
 * auto-complete
 * auto-complete-c-headers
 * auto-package-update
-* company-tern
 * dash
 * editorconfig
 * flycheck
