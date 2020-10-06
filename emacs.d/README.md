@@ -23,7 +23,6 @@ make install
 * auto-complete
 * auto-complete-c-headers
 * auto-package-update
-* company-tern
 * dash
 * editorconfig
 * flycheck
@@ -35,9 +34,9 @@ make install
 * linum-relative
 * load-dir
 * popup
-* yasnippet
-* zenburn-theme
-* ruby-mode
+* rebecca-theme
 * robe
+* ruby-mode
 * xref-js2
 * yaml-mode
+* yasnippet
