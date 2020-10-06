@@ -48,31 +48,16 @@
 (require 'auto-package-update)
 (auto-package-update-maybe)
 
-;; ;; Install update package if they're pending
-;; (require 'auto-package-update)
-;; (auto-package-update-maybe)
-
 ;; Leave this here, or package.el will just add it again.
 (package-initialize)
 
 ;; Load my settings
 (require 'package)
 (setq package-enable-at-startup nil)
-(add-to-list 'load-path (expand-file-name "custom" user-emacs-directory))
 
-;; Also add all directories within "lisp"
-;; I use this for packages I'm actively working on, mostly.
-(let ((files (directory-files-and-attributes "$HOME/.emacs.d/custom" t)))
-  (dolist (file files)
-    (let ((filename (car file))
-          (dir (nth 1 file)))
-      (when (and dir
-                 (not (string-suffix-p "." filename)))
-        (add-to-list 'load-path (car file))))))
-
-;; (add-to-list 'load-path "~/.emacs.d/custom")
-;; (require 'c-mode)
-;; (require 'packages)
-;; (require 'settings)
-;; (require 'messages)
-;; (require 'go)
+(add-to-list 'load-path "~/.emacs.d/custom")
+(require 'c-mode)
+(require 'packages)
+(require 'settings)
+(require 'messages)
+(require 'go)
