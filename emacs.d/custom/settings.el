@@ -96,8 +96,13 @@
 (setq-default indicate-empty-lines t)
 (setq-default indent-tabs-mode nil)
 
+;; Ctrl+Arrow right/left
+(define-key input-decode-map "\e[1;5C" [C-right])
+(define-key input-decode-map "\e[1;5D" [C-left])
+
 ;; Load Rebecca theme
 (require 'rebecca-theme)
 (load-theme 'rebecca t)
 
 (provide 'settings)
+;; EOF
