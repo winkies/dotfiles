@@ -5,8 +5,8 @@
 
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
-(when (< emacs-major-version 24)
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+
+(add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
 
 (package-initialize)
 
@@ -25,6 +25,7 @@
      js3-mode
      linum-relative
      load-dir
+     org
      popup
      rebecca-theme
      robe
