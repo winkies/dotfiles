@@ -96,4 +96,8 @@
 (setq-default indicate-empty-lines t)
 (setq-default indent-tabs-mode nil)
 
+;; Load Rebecca theme
+(require 'rebecca-theme)
+(load-theme 'rebecca t)
+
 (provide 'settings)

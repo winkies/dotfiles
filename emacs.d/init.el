@@ -26,12 +26,12 @@
      linum-relative
      load-dir
      popup
-     yasnippet
-     zenburn-theme
-     ruby-mode
+     rebecca-theme
      robe
+     ruby-mode
      xref-js2
      yaml-mode
+     yasnippet
      ))
 
 ;; Fetch the list of packages available
