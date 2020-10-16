@@ -1,23 +1,18 @@
-# Winkie's Dotfiles
+# Winkie's dotfiles
+
+![Screenshot of my desktop](https://i.imgur.com/f7XZeAO.png)
+
+## Installation
+
+```bash
+git clone https://github.com/winkies/dotfiles.git && cd dotfiles && ./install
+```
 
 ## Setup configuration:
-* [Emacs]: see [config](./emacs.d/README.md).
-* [i3-gaps]: see [config](./i3/README.md).
-* [Zsh]
-* [Rxvt-unicode]
-
-## App configuration:
-* [Redshift]
-
-## How to install ?
-
-```
-./install
-```
+* [Emacs](./emacs.d/README.md),
+* [i3-gaps](./i3/README.md),
+* [Redshift](./redshift.conf),
+* [Rxvt-unicode](./Xresources),
+* [Zsh](./zshrc).
 
 ---
-[Emacs]: https://www.gnu.org/software/emacs/
-[i3-gaps]: https://github.com/Airblader/i3
-[Redshift]: https://github.com/jonls/redshift
-[Rxvt-unicode]: http://software.schmorp.de/pkg/rxvt-unicode.html
-[Zsh]: https://github.com/robbyrussell/oh-my-zsh
