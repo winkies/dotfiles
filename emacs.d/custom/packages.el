@@ -20,8 +20,8 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js3-mode))
 
 ;; ESS
-(add-to-list 'load-path "$HOME/.emacs.d/git/ESS/lisp")
-(load "ess-site")
+;; (add-to-list 'load-path "$HOME/.emacs.d/git/ESS/lisp")
+;; (load "ess-site")
 
 ;; Editor Config
 (require 'editorconfig)
