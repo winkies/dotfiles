@@ -3,9 +3,11 @@
 
 (require 'package)
 
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/"))
+;; Hotfix 'gnu failed to download on 26.1
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/") t)
 (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
 
 (package-initialize)
@@ -45,8 +47,8 @@
         (package-install package)))
 
 ;; Install update package if they're pending
-(require 'auto-package-update)
-(auto-package-update-maybe)
+;; (require 'auto-package-update)
+;; (auto-package-update-maybe)
 
 ;; Leave this here, or package.el will just add it again.
 (package-initialize)
